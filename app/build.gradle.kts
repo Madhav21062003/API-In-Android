@@ -7,6 +7,9 @@ android {
     namespace = "com.madhavsolanki.apiintegration"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.madhavsolanki.apiintegration"
         minSdk = 24
@@ -44,4 +47,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    // Volley Dependency
+    implementation("com.android.volley:volley:1.2.1")
+
+    // GSON Converter
+    implementation ("com.google.code.gson:gson:2.10.1")
 }
